@@ -1,9 +1,10 @@
 package spring.test.mybatis.infrastructure.mapper;
 
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import spring.test.mybatis.infrastructure.model.Tasks;
 import spring.test.mybatis.infrastructure.model.TasksExample;
+
+import java.util.List;
 
 public interface TasksMapper {
     long countByExample(TasksExample example);
@@ -21,6 +22,7 @@ public interface TasksMapper {
     List<Tasks> selectByExample(TasksExample example);
 
     List<Tasks> test();
+
     Tasks selectByPrimaryKey(Integer taskId);
 
     int updateByExampleSelective(@Param("record") Tasks record, @Param("example") TasksExample example);

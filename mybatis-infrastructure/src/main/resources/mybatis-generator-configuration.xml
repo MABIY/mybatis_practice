@@ -65,7 +65,7 @@
         <!--<generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
         <!--</table>-->
         <table tableName="tasks">
-        <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
     </context>

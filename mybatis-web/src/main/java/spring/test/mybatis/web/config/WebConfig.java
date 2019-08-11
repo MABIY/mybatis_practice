@@ -9,9 +9,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackageClasses ={
-        spring.test.mybatis.infrastructure.config.Components.class,
-        spring.test.mybatis.domain.service.impl.Components.class,
+@ComponentScan(basePackageClasses = {
         spring.test.mybatis.web.controller.Components.class
 })
 public class WebConfig {

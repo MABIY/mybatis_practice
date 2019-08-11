@@ -3,7 +3,7 @@
 <mapper namespace="spring.test.mybatis.infrastructure.mapper.TasksMapper">
     <select id="test" resultMap="BaseResultMap">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from tasks
     </select>
 </mapper>

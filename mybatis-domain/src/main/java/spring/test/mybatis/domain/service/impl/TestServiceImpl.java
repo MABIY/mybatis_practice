@@ -6,8 +6,6 @@ import spring.test.mybatis.domain.service.TestService;
 import spring.test.mybatis.infrastructure.mapper.TasksMapper;
 import spring.test.mybatis.infrastructure.model.Tasks;
 
-import java.util.List;
-
 /**
  * @author lh
  **/

@@ -1,13 +1,15 @@
 package spring.test.mybatis.web.config;
 
-import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import spring.test.mybatis.domain.service.impl.Components;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author lh
  **/
-@Configurable
+@Configuration
+@ComponentScan(basePackageClasses = {
+        spring.test.mybatis.domain.service.impl.Components.class,
+        spring.test.mybatis.infrastructure.config.Components.class
+})
 public class RootConfig {
 }
